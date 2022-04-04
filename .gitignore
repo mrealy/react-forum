@@ -1,0 +1,12 @@
+# built assets
+dist
+
+# dependencies
+node_modules
+
+# dotenv environment variable files
+.env
+
+# editor settings
+.idea
+.vscode
