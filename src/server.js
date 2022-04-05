@@ -1,5 +1,6 @@
 import express from 'express';
 import routes from './api/routes.js';
+import {createProxyMiddleware} from "http-proxy-middleware";
 
 const app = express();
 

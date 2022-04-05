@@ -1,6 +1,5 @@
 import React from 'react';
 import './Modal.css';
-import posts from '../../api/posts/posts.json';
 
 export default class Modal extends React.Component {
   constructor(props) {
@@ -29,19 +28,7 @@ export default class Modal extends React.Component {
   }
 
   onSubmit(event) {
-    console.log("Clicked OnSubmit");
-    switch(this.props.type) {
-      case 'post':
-        console.log(this.state);
-        posts.push(this.state);
-        console.log(posts);
-        break;
-      case 'comment':
-        break;
-      default:
-        console.log(this.state, this.props);
-        break;
-    }
+    console.log("Clicked OnSubmit", this.props);
   }
 
   render() {
